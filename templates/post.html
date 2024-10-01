@@ -1,0 +1,21 @@
+{% extends 'main_templates.html' %}
+
+{% block title %}
+{{ post.title }}
+{% endblock %}
+
+{% block body %}
+<div class="post-detail-container">
+    <div class="container post-detail-wrap">
+        <div class="post-header text-center mb-5">
+            <h1 class="mb-4">{{ post.title }}</h1>
+        </div>
+        <div class="post-content">
+            <div class="post-text">
+                <p>{{ post.text }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
